@@ -80,8 +80,8 @@
   "moduleExtensions": {
     "//:ext.bzl%external": {
       "general": {
-        "bzlTransitiveDigest": "IgKqtprA/6CiVlU8y+r1rtiAzKsDNIwNnFy1tV6wMsE=",
-        "usagesDigest": "AcPq6lcYLjJZwQONlc6P8lpk3l5tQ+GbHrJuFrbuDsc=",
+        "bzlTransitiveDigest": "D60yRrWLFtHlSc9qXfTJcVrnEmzi5JBabnbQS6/YxFw=",
+        "usagesDigest": "hobPo7TX1SE+Nchb6rBsAKR7kgnG0IZVw7iqFPV8/IU=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
@@ -106,19 +106,19 @@
     "@@apple_support~//crosstool:setup.bzl%apple_cc_configure_extension": {
       "general": {
         "bzlTransitiveDigest": "PjIds3feoYE8SGbbIq2SFTZy3zmxeO2tQevJZNDo7iY=",
-        "usagesDigest": "+hz7IHWN6A1oVJJWNDB6yZRG+RYhF76wAYItpAeIUIg=",
+        "usagesDigest": "aLmqbvowmHkkBPve05yyDNGN7oh7QE9kBADr3QIZTZs=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
         "generatedRepoSpecs": {
-          "local_config_apple_cc_toolchains": {
-            "bzlFile": "@@apple_support~//crosstool:setup.bzl",
-            "ruleClassName": "_apple_cc_autoconf_toolchains",
-            "attributes": {}
-          },
           "local_config_apple_cc": {
             "bzlFile": "@@apple_support~//crosstool:setup.bzl",
             "ruleClassName": "_apple_cc_autoconf",
+            "attributes": {}
+          },
+          "local_config_apple_cc_toolchains": {
+            "bzlFile": "@@apple_support~//crosstool:setup.bzl",
+            "ruleClassName": "_apple_cc_autoconf_toolchains",
             "attributes": {}
           }
         },
@@ -134,7 +134,7 @@
     "@@platforms//host:extension.bzl%host_platform": {
       "general": {
         "bzlTransitiveDigest": "xelQcPZH8+tmuOHVjL9vDxMnnQNMlwj0SlvgoqBkm4U=",
-        "usagesDigest": "hgylFkgWSg0ulUwWZzEM1aIftlUnbmw2ynWLdEfHnZc=",
+        "usagesDigest": "V1R2Y2oMxKNfx2WCWpSCaUV1WefW1o8HZGm3v1vHgY4=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
@@ -150,8 +150,8 @@
     },
     "@@rules_java~//java:extensions.bzl%compatibility_proxy": {
       "general": {
-        "bzlTransitiveDigest": "EdQ1pJblU32gYeqbX12frciptf4/e4KwtAdn45gInz0=",
-        "usagesDigest": "0/TyZruTcO4Acns2lBIfsdJDXcTS869yRn0gpAYMGww=",
+        "bzlTransitiveDigest": "27iIxDQeBxbrFyqnA0Qi8G/rg3so+hGSn6IATqM3RkI=",
+        "usagesDigest": "ElnKsoT9ADpltMnoK5Lg4cp/zR/8ZxtH1pCJml/mZOA=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
