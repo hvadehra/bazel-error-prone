@@ -1,0 +1,6 @@
+filegroup(
+  name = "error_prone_files",
+  srcs = [
+    "@ep_with_deps//jar:file"
+  ],
+)

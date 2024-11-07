@@ -1,0 +1,37 @@
+load("@rules_java//toolchains:default_java_toolchain.bzl", "default_java_toolchain")
+load("@rules_java//java/toolchains:java_package_configuration.bzl", "java_package_configuration")
+
+default_java_toolchain(
+  name = "my_java_toolchain",
+  java_runtime = "@local_jdk//:jdk",
+  package_configuration = [
+    ":ep_all",
+    ":ep_OperatorPrecedence_WARN",
+  ],
+)
+
+java_package_configuration(
+  name = "ep_all",
+  packages = [":all_pkgs"],
+  javacopts = [
+    "-Xep:OperatorPrecedence:ERROR",
+  ],
+)
+
+package_group(
+  name = "all_pkgs",
+  packages = ["//..."],
+)
+
+java_package_configuration(
+  name = "ep_OperatorPrecedence_WARN",
+  packages = [":ep_OperatorPrecedence_WARN_pkgs"],
+  javacopts = [
+    "-Xep:OperatorPrecedence:WARN",
+  ],
+)
+
+package_group(
+  name = "ep_OperatorPrecedence_WARN_pkgs",
+  packages = ["//java/allowed"],
+)

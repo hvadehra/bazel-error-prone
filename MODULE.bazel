@@ -1,1 +1,11 @@
 module(name = 'bazel-error-prone', version = '0.0.0')
+
+bazel_dep(name = "rules_java", version = "8.3.0")
+
+toolchains = use_extension("@rules_java//java:extensions.bzl", "toolchains")
+use_repo(toolchains, "local_jdk")
+
+register_toolchains("//:all")
+
+external = use_extension("//:ext.bzl", "external")
+use_repo(external, "ep_with_deps")
